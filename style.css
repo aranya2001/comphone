@@ -1,0 +1,68 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #fff;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.hero {
+	background-image: url('https://via.placeholder.com/1500x800');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+}
+
+.hero h1 {
+	font-size: 60px;
+	font-weight: bold;
+	margin-bottom: 40px;
+	color: #fff;
+}
+
+.hero p {
+	font-size: 24px;
+	margin-bottom: 40px;
+	color: #fff;
+}
+
+.featured-products {
+	padding: 100px 0;
+}
+
+.featured-products h2 {
+	font-size: 36px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.card {
+	border: none;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+	height: 250px;
+	object-fit: cover;
+}
+
+.card-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.card-text {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.newsletter {
+	background-color: #f6f6f6;
+	padding: 100px 0
