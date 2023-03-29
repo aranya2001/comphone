@@ -1,0 +1,35 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  font-size: 16px;
+}
+
+.toolbar button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+.toolbar button:hover {
+  background-color: #666;
+}
+
+.canvas {
+  margin: 20px auto;
+  width: 80%;
+}
+
+canvas {
+  border: 1px solid #ccc;
+}
+
+input[type="file"] {
+  display: none;
+}
