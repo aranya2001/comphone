@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Online Photo Editor</title>
-    <link rel="stylesheet" href="pstyle.css">
-  </head>
-  <body>
-    <div class="toolbar">
-      <button id="undo-btn">Undo</button>
-      <button id="redo-btn">Redo</button>
-      <button id="save-btn">Save</button>
-    </div>
-    <div class="canvas">
-      <canvas id="image-canvas"></canvas>
-    </div>
-    <input type="file" id="file-input" accept="image/*">
-    <script src="pscript.js"></script>
-  </body>
+<head>
+	<title>Online Photo Editor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="editor-container">
+		<div class="image-container">
+			<canvas id="canvas"></canvas>
+		</div>
+		<div class="controls">
+			<input type="file" id="file-input">
+			<div class="slider-container">
+				<label for="brightness">Brightness:</label>
+				<input type="range" id="brightness" min="-100" max="100" value="0">
+			</div>
+			<div class="slider-container">
+				<label for="contrast">Contrast:</label>
+				<input type="range" id="contrast" min="-100" max="100" value="0">
+			</div>
+			<button id="crop-btn">Crop</button>
+			<button id="resize-btn">Resize</button>
+			<select id="filter-select">
+				<option value="">No Filter</option>
+				<option value="grayscale">Grayscale</option>
+				<option value="sepia">Sepia</option>
+				<option value="blur">Blur</option>
+			</select>
+			<button id="save-btn">Save</button>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
 </html>
