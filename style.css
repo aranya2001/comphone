@@ -1,7 +1,16 @@
-/* Styles for header */
+/* Styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Styles for the header */
 header {
   background-color: #333;
   color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
 }
 
@@ -11,8 +20,8 @@ header h1 {
 }
 
 header form {
-  display: inline-block;
-  float: right;
+  display: flex;
+  align-items: center;
 }
 
 header input[type="text"] {
@@ -32,11 +41,12 @@ header button[type="submit"] {
   cursor: pointer;
 }
 
-/* Styles for categories */
+/* Styles for the categories */
 .categories {
   display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .categories a {
@@ -45,18 +55,21 @@ header button[type="submit"] {
   color: #333;
   text-decoration: none;
   border-radius: 4px;
+  margin-right: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .categories a:hover {
-  background-color: #555;
+  background-color: #4CAF50;
   color: #fff;
 }
 
-/* Styles for main content */
+/* Styles for the main content */
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
+  padding: 20px;
 }
 
 .product {
@@ -84,28 +97,24 @@ main {
 
 .product button {
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #4CAF50;
   color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .product button:hover {
-  background-color: #555;
+  background-color: #333;
 }
 
-/* Styles for footer */
+/* Styles for the footer */
 footer {
   background-color: #333;
   color: #fff;
-  padding: 10px 0;
+  padding: 10px;
   text-align: center;
-}
-
-footer p {
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -116,27 +125,26 @@ footer p {
 
 @media screen and (max-width: 768px) {
   header form {
-    display: block;
-    float: none;
-    text-align: center;
-    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
   }
 
   header input[type="text"] {
-    display: block;
-    margin: 0 auto;
+    margin: 10px 0;
   }
 
   header button[type="submit"] {
-    display: block;
-    margin: 10px auto 0;
+    margin: 10px 0 0;
   }
 
   .categories {
     flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
   }
 
   .categories a {
+    margin-right: 0;
     margin-bottom: 10px;
   }
 
