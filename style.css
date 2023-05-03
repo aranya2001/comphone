@@ -1,165 +1,146 @@
-* {
-	box-sizing: border-box;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
-}
-
+/* Styles for header */
 header {
-	background-color: #333;
-	color: #fff;
-	padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
 }
 
 header h1 {
-	margin: 0;
-	padding: 0 20px;
-	display: inline-block;
+  margin: 0;
+  font-size: 32px;
 }
 
 header form {
-	display: inline-block;
-	float: right;
-	margin: 0;
-	padding: 0;
+  display: inline-block;
+  float: right;
 }
 
 header input[type="text"] {
-	padding: 5px;
-	border: none;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
 }
 
 header button[type="submit"] {
-	padding: 5px;
-	border: none;
-	background-color: #fff;
-	color: #333;
-	cursor: pointer;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
-nav {
-	background-color: #f2f2f2;
-	padding: 10px 0;
+/* Styles for categories */
+.categories {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.categories a {
+  padding: 10px 20px;
+  background-color: #ddd;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
-nav li {
-	margin: 0;
-	padding: 0;
+.categories a:hover {
+  background-color: #555;
+  color: #fff;
 }
 
-nav a {
-	display: block;
-	padding: 10px 20px;
-	color: #333;
-	text-decoration: none;
-}
-
-nav a:hover {
-	background-color: #ddd;
-}
-
+/* Styles for main content */
 main {
-	padding: 20px;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	grid-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
 
 .product {
-	border: 1px solid #ddd;
-	padding: 20px;
-	text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
 }
 
 .product img {
-	max-width: 100%;
-	height: auto;
-	margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .product h2 {
-	margin-top: 0;
-	margin-bottom: 10px;
-	font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .product p {
-	margin-top: 0;
-	margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .product button {
-	padding: 10px 20px;
-	background-color: #333;
-	color: #fff;
-	border: none;
-	cursor: pointer;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .product button:hover {
-	background-color: #555;
+  background-color: #555;
 }
 
+/* Styles for footer */
 footer {
-	background-color: #333;
-	color: #fff;
-	padding: 10px 0;
-	text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
 }
 
 footer p {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 @media screen and (max-width: 768px) {
-	header form {
-		display: block;
-		float: none;
-		text-align: center;
-		margin-top: 10px;
-	}
-	header input[type="text"] {
-		display: block;
-		margin: 0 auto;
-	}
+  header form {
+    display: block;
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
 
-	header button[type="submit"] {
-		display: block;
-		margin: 10px auto 0;
-	}
+  header input[type="text"] {
+    display: block;
+    margin: 0 auto;
+  }
 
-	nav ul {
-		flex-direction: column;
-	}
+  header button[type="submit"] {
+    display: block;
+    margin: 10px auto 0;
+  }
 
-	nav a {
-		padding: 10px 0;
-		display: block;
-		text-align: center;
-		border-bottom: 1px solid #ddd;
-	}
+  .categories {
+    flex-direction: column;
+  }
 
-	main {
-		grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-	}
+  .categories a {
+    margin-bottom: 10px;
+  }
 
+  main {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
 }
